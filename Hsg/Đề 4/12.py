@@ -5,6 +5,14 @@
 # Viết thủ tục với 2 tham số đầu vào là A,B và in ra màn hình dãy C
 # (Gợi ý: Dùng hàm randint() để sinh bộ dữ liệu ngẫu nhiên và dùng các phương thức copy)
 import random
+A = []
+B = []
+for i in range(10):
+    z = random.randint(1,100)
+    s = random.randint(1,100)
+    A.append(z)
+    B.append(s)
 
-A = [1,2,3,4,5,6,7]
-B = [1,2,4234,234,1,423,4]
+C = [sum(A+B)]
+C.extend(B)
+print(C)
